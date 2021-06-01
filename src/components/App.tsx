@@ -1,16 +1,17 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
+import Button from "@material-ui/core/Button"
+import ToolTip from "@material-ui/core/Tooltip"
 
 import "./style.css";
 
 function App() {
   return (
-    <div>
-      <h3>Hello From Electron App</h3>
-      <h4>Electron: {process.versions.electron}</h4>
-      <h4>Chrome: {process.versions.chrome}</h4>
-      <h4>Node: {process.versions.node}</h4>
-    </div>
+    <ToolTip title="Click Me" arrow>  
+      <Button variant="contained" color="primary">
+        Hola
+      </Button>
+    </ToolTip>
   );
 }
 
